@@ -1,0 +1,3 @@
+[submodule "vlei-qvi"]
+	path = vlei-qvi
+	url = https://github.com/WebOfTrust/vLEI-qvi
