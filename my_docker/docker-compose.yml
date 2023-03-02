@@ -1,0 +1,14 @@
+version: "3"
+name: alpine-app
+services:
+  witness:
+    image: app/alpine:test
+    build: .
+    restart: always
+    ports:
+      - "5631:5631" # HTTP
+      - "5632:5632" # TCP
+    environment:
+
+    volumes:
+      - /witness-storage/:/usr/local/var/keri/
