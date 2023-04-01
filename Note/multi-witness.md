@@ -33,9 +33,9 @@ Witness witness1 : BCSCTBe-xgWU3L2cSpDqwHk1_GWtnMAXWVZsjnYZbCxD
 
 $ kli init --name witness2 --nopasscode --config-dir ./scripts/ --config-file witness2
 
-```
+```json
 {           
-  "witness": {                               
+  "witness2": {                               // Name of the witness
     "dt": "2022-01-20T12:57:59.823350+00:00",                   
     "curls": ["tcp://127.0.0.1:5633/", "http://127.0.0.1:5634/"]
   },                                                            

@@ -1,14 +1,16 @@
 version: "3"
-name: alpine-app
+name: keripy-app
 services:
-  witness:
-    image: app/alpine:test
+  keripy:
+    image: app/keripy:test
     build: .
     restart: always
     ports:
       - "5631:5631" # HTTP
       - "5632:5632" # TCP
     environment:
+      - CONFIG_DIR=/keripy/scripts
 
     volumes:
-      - /witness-storage/:/usr/local/var/keri/
+      - /keripy-storage/:/usr/local/var/keri/
+      - /home/tanjim/Documents/DevOps/witness-health-monitor/:/witness-monitor

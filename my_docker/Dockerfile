@@ -25,7 +25,7 @@ RUN pip install hio
 # In witness-pools
 # RUN git clone --depth=1 --branch production https://github.com/provenant-dev/keripy.git /usr/local/var/keripy
 # RUN git clone https://github.com/provenant-dev/keripy /keripy
-RUN git clone --depth=1 --branch production https://github.com/provenant-dev/keripy.git /keripy
+RUN git clone https://github.com/provenant-dev/keripy.git /keripy
 
 WORKDIR /keripy
 RUN pip install -r requirements.txt

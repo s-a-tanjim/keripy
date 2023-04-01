@@ -23,6 +23,7 @@ kli init
   --name <name-of-the-keystore>     # name-of-the-keystore
   --base "${KERI_TEMP_DIR}" 
   --nopasscode                      # For No password
+  --passcode
   --salt <salt>                     # Salt to generate same type of ID
   --config-dir <config dir path>    # ./scripts   : ref to: ./scripts/keri/cf
   --config-file <config file name>  #  file name inside ./scripts/keri/cf
